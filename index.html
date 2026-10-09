@@ -4,6 +4,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap">
 <style>
+  @font-face{font-family:"Soledago";src:url("fonts/Soledago.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;}
   :root{
     --ink:#4A3320; --ground:#E7DBB8; --surface:#DECBA0; --surface-2:#CBAE79;
     --taiga:#4B5C3E; --silver:#8B8A7C; --ember:#8C3E22;
@@ -257,6 +258,11 @@ html{scroll-behavior:smooth;}
 .mk-mini-card img{width:56px; height:56px; object-fit:cover; border-radius:2px; flex-shrink:0;}
 .mmc-info{display:flex; align-items:center; justify-content:space-between; gap:10px; flex:1;}
 @media (max-width:760px){ .mk-online-item{grid-template-columns:1fr;} }
+
+.h-brand, .util-bar .brand{font-family:"Soledago","Yeseva One",serif !important; font-weight:400 !important; letter-spacing:.01em;}
+.util-bar .brand{font-size:30px;}
+@media (max-width:560px){ .util-bar .brand{font-size:22px;} #masterclasses .section-head h2.h-brand{font-size:40px;} }
+#masterclasses .section-head h2.h-brand{font-size:clamp(40px,5vw,52px); line-height:1.05;}
 </style>
 
 <header>
@@ -316,7 +322,7 @@ html{scroll-behavior:smooth;}
 
   <section class="hero">
     <span class="label eyebrow">маркетплейс якутских ремёсел</span>
-    <h1 class="display" style="font-size:clamp(32px,6vw,64px);">Маленькая Якутия</h1>
+    <h1 class="display h-brand" style="font-size:clamp(44px,8vw,84px); line-height:1.02;">Маленькая Якутия</h1>
     <p>Украшения, ножи, одежда, товары для дома и сувениры от мастеров Якутии.</p>
     <a href="#shop" class="btn-wa">В витрину</a>
   </section>
@@ -324,7 +330,7 @@ html{scroll-behavior:smooth;}
   <section class="wrap concept" id="about">
     <div style="text-align:center; margin-bottom:26px;">
       <span class="label" style="color:var(--ember); text-shadow:0 1px 6px rgba(20,14,8,.5);">о проекте</span>
-      <h2 class="display" style="margin:8px 0 0; font-size:clamp(28px,4vw,40px); color:var(--ground); text-shadow:0 2px 10px rgba(20,14,8,.5);">Не только магазин</h2>
+      <h2 class="display h-brand" style="margin:8px 0 0; font-size:clamp(40px,5vw,52px); line-height:1.05; color:var(--ground); text-shadow:0 2px 10px rgba(20,14,8,.5);">Не только магазин</h2>
     </div>
     <p class="lede">«Маленькая Якутия» — это шоурум-мастерская: якутское ремесло здесь можно не только купить, но и увидеть своими глазами, а после — попробовать самому. Мастера работают открыто — выбирайте готовое изделие в витрине или записывайтесь на мастер-класс, очный или онлайн.</p>
     <div class="concept-links">
@@ -348,7 +354,7 @@ html{scroll-behavior:smooth;}
 
   <section class="wrap" id="masterclasses">
     <div class="section-head">
-      <h2 class="display">Мастер-классы</h2>
+      <h2 class="display h-brand">Мастер-классы</h2>
       <p class="note">Приходите в мастерскую или занимайтесь дома по видео — выберите свой формат.</p>
     </div>
 
@@ -713,7 +719,7 @@ html{scroll-behavior:smooth;}
 
   <footer>
     <div class="row glass">
-      <span class="display">Маленькая Якутия</span>
+      <span class="display h-brand" style="font-size:24px;">Маленькая Якутия</span>
       <p>Товары на странице примеры для проверки раскладки, не реальный каталог. Фон стены и фото товаров сгенерированы.</p>
     </div>
   </footer>
